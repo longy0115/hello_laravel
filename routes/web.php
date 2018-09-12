@@ -14,4 +14,7 @@
 Route::get('/', 'StaticPagesController@home');
 Route::get('/help', 'StaticPagesController@help');
 Route::get('/about', 'StaticPagesController@about');
-Route::get('/test', 'StaticPagesController@test');
+// 测试数据路由
+Route::get('/test', 'TestPagesController@index');
+Route::get('/test/yinyong','TestPagesController@yinyong');//引用测试
+Route::get('/test/sort','TestPagesController@sort');//排序测试
